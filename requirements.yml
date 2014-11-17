@@ -1,0 +1,3 @@
+- src: https://github.com/geerlingguy/ansible-role-repo-epel
+- src: git+https://git.forgeservicelab.fi/ansible-roles/forge_users.git
+- src: git+https://git.forgeservicelab.fi/ansible-roles/admin_node.git
