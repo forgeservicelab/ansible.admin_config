@@ -5,7 +5,3 @@
 - src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/forge_users.git
   path: roles/
   name: forge_users
-
-#- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/admin_node.git
-#  path: roles/
-#  name: admin_node
