@@ -1,0 +1,16 @@
+- hosts: "{{ h }}"
+
+  vars_files:
+    # secrets must specify gitlab_private_token
+    - secrets.yml
+
+  roles:
+    - role: ansible-role-repo-epel
+
+    # git clone https://git.forgeservicelab.fi/ansible_roles/forge_users.git
+    - role: forge_users
+      forge_users_private_token: "{{ gitlab_private_token }}"
+      forge_users_list:
+        - user1
+        - user2
+      tags: users
